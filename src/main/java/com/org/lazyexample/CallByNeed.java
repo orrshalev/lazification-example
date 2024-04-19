@@ -14,7 +14,7 @@ public class CallByNeed {
     private static void calee(int key, Thunk tk, int N) {
         for (int i = 0; i < N; i++) {
             if (key != 0 && tk.f() < N) {
-                System.out.printf("User has access, iteration = %d\n", i);
+                System.err.printf("User has access, iteration = %d\n", i);
             }
         }
     }
